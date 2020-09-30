@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Javascript</title>
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1 class="texto-centrado">Jugando con Javascript</h1>
+    </header>
+    <main>
+        <h2 class="texto-centrado">Piedra, Papel o Tijera</h2>
+
+        <div class="contenedor contenido-principal">
+            <div>
+                <label for="numero">Gana el mejor de: </label>
+                <input type="number" id="numero">
+                <p>Toma tu decisión...</p>
+                <div class="box-btn">
+                    <button id="piedra" onclick="botones(this)"><img src="img/ppt1-1.png" alt="piedra"></button>
+                    <button id="papel" onclick="botones(this)"><img src="img/ppt1-2.png" alt="papel"></button>
+                    <button id="tijera" onclick="botones(this)"><img src="img/ppt1-3.png" alt="tijera"></button>
+                </div>
+                <div class="resultados">
+                    <p id="wins" class="datos">Ganados:</p>
+                    <p id="lost" class="datos">Perdidos:</p>
+                    <p id="draw" class="datos">Empates:</p>
+                </div>
+            </div>
+            <div class="box-resultados">
+                <div id="optionAI"></div>
+                <div>
+                    <p id="resul-parcial"></p>
+                    <p id="resul"></p>
+                </div>
+                <button id="reset" onclick="recargar()"><img src="img/refresh.png" alt="refresh" class="refresh"></button>
+            </div>
+        </div>
+        <div class="contenedor contenido-musical">
+            <audio controls>
+                <source src="audio/music.ogg" type="audio/ogg">
+                    Tu navegador no soporta audio HTML5.
+            </audio>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
