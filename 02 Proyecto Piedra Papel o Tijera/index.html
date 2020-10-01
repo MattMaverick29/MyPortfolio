@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/873ad54180.js" crossorigin="anonymous"></script>
     <title>Javascript</title>
 </head>
 
@@ -35,17 +36,20 @@
             <div class="box-resultados">
                 <div id="optionAI"></div>
                 <div>
-                    <p id="resul-parcial"></p>
                     <p id="resul"></p>
                 </div>
-                <button id="reset" onclick="recargar()"><img src="img/refresh.png" alt="refresh" class="refresh"></button>
+                <button id="reset" onclick="recargar()"><img src="img/refresh.png" alt="refresh"
+                        class="refresh"></button>
             </div>
         </div>
         <div class="contenedor contenido-musical">
-            <audio controls>
-                <source src="audio/music.ogg" type="audio/ogg">
+            <button onclick="mutear()" id="musica">
+                <audio loop preload="auto">
+                    <source src="audio/music.ogg" type="audio/ogg">
                     Tu navegador no soporta audio HTML5.
-            </audio>
+                </audio>
+                <i class="fas fa-volume-mute"></i>
+            </button>
         </div>
     </main>
 
