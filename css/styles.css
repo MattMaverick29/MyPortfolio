@@ -14,6 +14,11 @@ p {
     font-family: 'Krub', sans-serif;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Header */
 
@@ -38,6 +43,22 @@ p {
     font-size: 6rem;
 }
 
+.image-header {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .image-header {
+        display: block;
+        max-height: 100%;
+        height: 70vh;
+        max-width: 100%;
+    }
+    .image-header2 {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .h-title,
     .h-title2 {
@@ -46,6 +67,20 @@ p {
     .h-nombre {
         font-size: 3rem;
     }
+}
+
+
+/* Navegacion */
+
+.navegacion ul li a {
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.navegacion ul li a:hover {
+    color: #6f6aecc7;
 }
 
 
@@ -67,4 +102,12 @@ p {
 .footer-legend {
     font-size: 2rem;
     font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+/* About */
+
+.about-h {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
 }
