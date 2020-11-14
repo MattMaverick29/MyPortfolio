@@ -47,6 +47,10 @@ img {
     display: none;
 }
 
+.image-header2 {
+    margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
     .image-header {
         display: block;
@@ -72,8 +76,18 @@ img {
 
 /* Navegacion */
 
+.navegacion {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .navegacion ul li a {
+        margin-top: 3rem;
+    }
+}
+
 .navegacion ul li a {
-    margin-top: 3rem;
+    margin-top: .5rem;
     color: white;
     font-size: 1.5rem;
     font-family: 'Frank Ruhl Libre', serif;
