@@ -83,14 +83,14 @@ img {
 .navegacion ul li a {
     margin-top: .5rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Frank Ruhl Libre', serif;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .navegacion ul li a {
         margin-top: 3rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
