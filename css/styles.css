@@ -37,6 +37,18 @@ img {
     text-align: end;
 }
 
+.h-title-out {
+    font-size: 5rem;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .h-title-out {
+        font-size: 2.2rem;
+    }
+}
+
 .h-nombre {
     font-family: 'Lobster', cursive;
     text-align: center;
@@ -49,6 +61,11 @@ img {
 
 .image-header2 {
     margin-bottom: 0;
+}
+
+.image-header3 {
+    height: 80%;
+    width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +88,13 @@ img {
     .h-nombre {
         font-size: 3rem;
     }
+}
+
+
+/* Outside Header */
+
+.outside-header {
+    width: 100%;
 }
 
 
@@ -117,6 +141,21 @@ img {
 .footer-legend {
     font-size: 2rem;
     font-family: 'Frank Ruhl Libre', serif;
+}
+
+.footer-legend2 {
+    font-size: 1.5rem;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.ico-mail {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.ico-lk {
+    color: blue;
+    font-size: 1.5rem;
 }
 
 
