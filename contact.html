@@ -42,10 +42,33 @@
     <main class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="contact-h">¿Quieres contactarte conmigo? Escríbeme</h2>
+                <h2 class="text-center">¿Quieres contactarte conmigo? Escríbeme</h2>
             </div>
-            <div class="col-12">
 
+            <div class="col-12">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8">
+                        <form method="POST" id="form" class="bg-dark p-5 my-4 rounded text-white">
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label label-asunto">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Escribe el asunto para enviarme un mail</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label label-mensaje">Mensaje</label><br>
+                                <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+                            </div>
+                            <div class="my-3 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-form">Enviar <i class="far fa-envelope ico-mail"></i></button>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <p>O buscame en mis redes</p>
+                                <a href="https://www.linkedin.com/in/matias-gutierrez-27822797/" target="_blank"><i class="fab fa-linkedin ico-lk mr-2"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram ico-insta"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -55,16 +78,10 @@
             <div class="col-12 col-md-6 text-white text-center align-self-center">
                 <p class="footer-legend m-0">All rights reserved 2020 &copy;</p>
             </div>
-            <div class="col-12 col-md-6">
-                <div>
-                    <p class="text-white m-0 footer-legend2">Contacto: </p>
-                    <a href="mailto:matiasgutierrez23@gmail.com"><i class="far fa-envelope ico-mail"></i></a>
-                    <a href="https://www.linkedin.com/in/matias-gutierrez-27822797/"><i class="fab fa-linkedin ico-lk"></i></a>
-                </div>
-            </div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -136,11 +136,31 @@ img {
 }
 
 
+/* Formulario contacto */
+
+.label-asunto,
+.label-mensaje {
+    font-size: 1.5rem;
+}
+
+.btn-form {
+    font-size: 1.2rem;
+    background-color: blue;
+    width: 50%;
+}
+
+
 /* Footer */
 
 .footer-legend {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Frank Ruhl Libre', serif;
+}
+
+@media (min-width: 768px) {
+    .footer-legend {
+        font-size: 2rem;
+    }
 }
 
 .footer-legend2 {
@@ -149,13 +169,18 @@ img {
 }
 
 .ico-mail {
-    color: yellow;
-    font-size: 1.5rem;
+    color: orchid;
+    font-size: 1.2rem;
 }
 
 .ico-lk {
     color: blue;
-    font-size: 1.5rem;
+    font-size: 3rem;
+}
+
+.ico-insta {
+    color: orangered;
+    font-size: 3rem;
 }
 
 
